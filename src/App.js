@@ -7,6 +7,7 @@ import {data as eventsArr} from "./data.js"
 import React from 'react';
 import Confetti from "react-confetti"
 
+//Fammi sapere che ne pensi del codice! :)
 function App() {
   const [selectedBet, setSelectedBet] = React.useState(null);
   const [founds, setFounds] = React.useState(100);
