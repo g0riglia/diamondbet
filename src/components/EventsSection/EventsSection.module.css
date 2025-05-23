@@ -1,0 +1,54 @@
+.eventsSection {
+    color: white;
+    padding: 5%;
+}
+
+.text  h1 {
+    margin: 0;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events {
+    margin-top: .8em;
+    background-color: #0d1c2a;
+    border: 1px solid #192f44;
+    border-radius: 5px;
+}
+
+.events .event:not(:last-of-type) {
+    border-bottom: 1px solid #192f44;
+}
+
+.event {
+    padding: 0 .5em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quotas {
+    display: flex;
+}
+
+.quota {
+    background-color: #ffd000;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .2em;
+    border-radius: 2px;
+    margin-left: .5em;
+    border: none;
+    cursor: pointer;
+}
+
+.quota:hover, .quota:focus {
+    background-color: #cfa900;
+}
+

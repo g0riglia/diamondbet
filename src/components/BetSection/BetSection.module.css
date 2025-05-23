@@ -1,0 +1,56 @@
+.betSection {
+    color: white;
+    padding: 0 5%;
+}
+
+.betSection h1, .betSection p {
+    margin: 0;
+}
+
+.bet {
+    margin-top: .8em;
+    background-color: #0d1c2a;
+    border: 1px solid #192f44;
+    border-radius: 5px;
+    padding: .5em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.bet .input {
+    padding: .5em;
+    border-radius: 2px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.bet .selectedBet {
+    font-size: .8rem;
+}
+
+.bet input {
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bet button {
+    background-color: #2c8e50;
+    border: 1px solid #548f6a;
+    color: white;
+    padding: .5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.bet button:hover, .bet button:focus {
+    background-color: #247a43;
+}
