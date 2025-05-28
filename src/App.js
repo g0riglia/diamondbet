@@ -7,6 +7,7 @@ import {data as eventsArr} from "./data.js"
 import React from 'react';
 import Confetti from "react-confetti"
 
+//Fammi sapere che ne pensi del codice! :)
 function App() {
   const [selectedBet, setSelectedBet] = React.useState(null);
   const [founds, setFounds] = React.useState(100);
@@ -62,8 +63,12 @@ function App() {
       <Header />
       <EventsSection founds={founds} handleClick={handleClick} events={eventsArr}/>
       <BetSection selectedBet={selectedBet} handleBet={handleBet} bettedMoney={bettedMoney} setBettedMoney={setBettedMoney}/>
-      {modal.show && <WinModal setModal={setModal} modal={modal}/>}
-      {modal.show && <Confetti />}
+      {modal.show && 
+        <>
+          <WinModal setModal={setModal} modal={modal}/>
+          <Confetti />
+        </>
+      }
     </div>
   );
 }
