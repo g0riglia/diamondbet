@@ -63,8 +63,12 @@ function App() {
       <Header />
       <EventsSection founds={founds} handleClick={handleClick} events={eventsArr}/>
       <BetSection selectedBet={selectedBet} handleBet={handleBet} bettedMoney={bettedMoney} setBettedMoney={setBettedMoney}/>
-      {modal.show && <WinModal setModal={setModal} modal={modal}/>}
-      {modal.show && <Confetti />}
+      {modal.show && 
+        <>
+          <WinModal setModal={setModal} modal={modal}/>
+          <Confetti />
+        </>
+      }
     </div>
   );
 }
